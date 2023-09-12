@@ -267,7 +267,7 @@ footer {
     }
 
     .header_linha-1 {
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     #menuAbrir {

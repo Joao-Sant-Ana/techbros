@@ -4,39 +4,13 @@ var $left = document.getElementById('left')
 var $right = document.getElementById('right')
 
 var count = 1
+var time = 4000
+
 
 $left.addEventListener('click', recuar)
 $right.addEventListener('click', avancar)
 
-
-
-function avancar() {
-
-    $carroselImg.style.transition = ".5s linear"
-    $carroselImg.style.opacity = "0"
-    setTimeout(() => {
-        $carroselImg.style.opacity = "1"
-    }, 700);
-
-
-
-}
-
-function recuar() {
-    $carroselImg.style.transition = "2s linear"
-    $carroselImg.style.opacity = "0"
-    $carroselImg.style.opacity = "1"
-
-
-}
-
-
-
-
-
-/*
 function recuar () {
-
     if (count == 1) {
         count = 3
         $carroselImg.src = `image/image${count}.png`
@@ -45,7 +19,6 @@ function recuar () {
         count--
         $carroselImg.src = `image/image${count}.png`
     }
-    console.log(count)
 }
 
 function avancar () {
@@ -56,7 +29,6 @@ function avancar () {
         count++
         $carroselImg.src = `image/image${count}.png`
     }
-    console.log(count)
 }
 
 
@@ -71,4 +43,4 @@ setInterval(() => {
         count++
         $carroselImg.src = `image/image${count}.png`
     }
-}, 4000);*/
+}, time);
