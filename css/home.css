@@ -1,0 +1,396 @@
+@import url(_global.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: #fff;
+}  
+
+#carrosel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#carrosel_img {
+    width: 100%;
+}
+
+.buttons {
+    position: absolute;
+    top: calc(50% - 18svh);
+    cursor: pointer;
+}
+
+.buttons::selection {
+    background-color: transparent;
+    color: #fff;
+}
+
+#left {
+    right: calc(100% - 22svw);
+}
+
+#right {
+    left: calc(100% - 22svw);
+}
+
+main {
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: fit-content;
+    min-width: 100%;
+    gap: 70px;
+    padding-top: 200px;
+}
+
+.msg_bemvindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    width: 60svw;
+    height: 50svh;
+}
+
+.banner {
+    position: absolute;
+    top: 48px;
+    z-index: -2;
+    width: 100svw;
+    height: 50%;
+}
+
+.msg_bemvindo > h1 { 
+    margin: 100px auto 0;
+    text-align: center;
+    font-size: clamp(1em, 3.5vw + 25px, 4em);
+}
+
+h1 > span {
+    color: var(--rosa-techbros);
+    text-shadow: 
+        0 0 5px var(--rosa-secundario),
+        0 0 400px var(--rosa-techbros),
+        0 0 600px var(--rosa-techbros);
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: clamp(1em, .4vw + .8em, 2.5em);
+    width: 50%;
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+
+.geral {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    max-width: fit-content;
+}
+
+.area_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    min-width: 75%;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+.patrocinadores {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    max-width: fit-content;
+    min-width: 15%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.patrocinadores > li > h1 {
+    font-size: clamp(1em, 1vw + 8px, 2em);
+    margin: auto;
+}
+
+.patrocinadores_img {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    max-width: fit-content;
+    min-width: 100%;
+    gap: 20px;
+}
+
+.patrocinador {
+    width: 14svw;
+    filter: grayscale(100%);
+    transition: linear .4s;
+    cursor: pointer;
+}
+
+.patrocinador:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.subtitulo {
+    font-size: clamp(1.2em, 2vw + 20px, 25px);
+}
+
+.texto {
+    font-size: 15px;
+    width: 500px;
+    text-align: justify;
+}
+
+.sub {
+    font-size: clamp(1em, 1vw + 10px, 20px);
+}
+
+.historia, .vitorias, .sobre {
+    display: flex;
+    flex-direction: row;
+    min-width: 60%;
+    max-width: fit-content;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.coluna_img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 50%;
+    max-width: fit-content;
+}
+
+
+
+/* Responsividade */
+@media only screen and (max-width: 1200px) {
+    .patrocinadores {
+        margin-right: 20px;
+    }
+
+    .patrocinadores >  li > h1 {
+        font-size: clamp(.5em, .8vw + 10px, 1.5em);
+    }
+
+    .img {
+        width: 20vw;
+        height: 20svh;
+    }
+}
+
+@media only screen and (max-width: 1024px) {    
+    .banner {
+        width: 100%;
+        height: 30%;
+    }
+
+    .scroll {
+        font-size: clamp(.8em, .4vw + .5em, 2em);
+    }
+
+    .msg_bemvindo > h1 {    
+        font-size: clamp(12px, 4.3vw + 22px, 5em);
+    }
+    
+    .patrocinadores {
+        font-size: clamp(1em .8vw, 2.5em);
+        margin-right: 5px;
+    }
+
+    .patrocinador {
+        width: 20svw;
+        height: 8svh;
+    }
+
+    .subtitulo {
+        font-size: clamp(1em, 1.1vw + 15px, 40px);
+    }
+    
+    .texto {
+        font-size: 15px;
+    }
+
+    .img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .geral {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .patrocinadores {
+        padding-top: 90px;
+        width: 100svw;
+        margin: auto;
+        align-items: center;
+    }
+
+    .patrocinadores >  li > h1 {
+        font-size: clamp(.5em, .8vw + 15px, 1.5em);
+        margin: auto;
+    }
+
+    .patrocinadores_img {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .patrocinador {
+        width: 180px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 35%;
+    }
+
+    .scroll {
+        font-size: clamp(.6em, .4vw + .3em, 1.5em);
+    }
+
+    .msg_bemvindo > h1 {    
+        font-size: clamp(9.5px, 4vw + 18px, 5em);
+    }
+
+    .patrocinadores {
+        width: 90svw;
+    }
+
+    .patrocinador {
+        width: 130px;
+        height: 50px;
+    }
+    
+
+    .area_principal {
+        padding: 0;
+    }
+
+    .historia, .vitorias, .sobre {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coluna_img {
+        flex-direction: row;
+    }
+
+    .subtitulo {
+        font-size: clamp(1em, 2vw + 20px, 70px);
+    }
+    
+    .texto {
+        font-size: 15px;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    figcaption {
+        font-size: .8em;
+    }
+
+    #menuAbrir {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        height: 40%;
+        padding-top: 100px;
+    }
+
+    .scroll {
+        font-size: clamp(.5em, .4vw + .2em, 1   em);
+    }
+
+    .patrocinador {
+        width: 100px;
+        height: 50px;
+    }
+
+    .msg_bemvindo > h1 {    
+        font-size: clamp(0.62em, 3.2vw + 1em, 4em);
+    }
+
+    .subtitulo {
+        font-size: clamp(.6em, 2vw + 20px, 40px);
+    }
+    
+    .texto {
+        font-size: 15px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    figcaption {
+        font-size: .7em;
+    }
+
+    .coluna_img {
+        flex-direction: column;
+    }
+}

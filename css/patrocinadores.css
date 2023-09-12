@@ -1,0 +1,114 @@
+@import url(_global.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-width: 100svw;
+    max-width: fit-content;
+    padding-top: 120px;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    max-width: fit-content;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.patrocinadores  {
+    display: flex;
+    min-width: 100%;
+    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 90px 20px;
+    flex-wrap: wrap;
+}
+
+.patrocinador {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 25%;
+    max-width: fit-content;
+}
+
+.img_patrocinador {
+    width: 300px;
+}
+
+.platina > .img_patrocinador {
+    min-width: calc(300px + 10%);
+}
+
+.ouro > .img_patrocinador {
+    min-width: calc(300px + 8%);
+}
+
+.prata > .img_patrocinador {
+    min-width: calc(300px + 6%);
+}
+
+.bronze > .img_patrocinador {
+    min-width: calc(300px + 4%);
+}
+
+@media only screen and (max-width: 768px) {
+    .texto_patrocinadores {
+        margin: auto;
+        text-align: center;
+    }
+    .patrocinadores {
+        flex-direction: column; 
+    }
+    
+    .patrocinador > img {
+        width: 45vw;
+    }
+
+    .platina > .img_patrocinador {
+        min-width: calc(45vw + 10%);
+    }
+    
+    .ouro > .img_patrocinador {
+        min-width: calc(45vw + 8%);
+    }
+    
+    .prata > .img_patrocinador {
+        min-width: calc(45vw + 6%);
+    }
+    
+    .bronze > .img_patrocinador {
+        min-width: calc(45vw + 4%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .patrocinador > img {
+        width: 60vw;
+    }
+
+    .platina > .img_patrocinador {
+        min-width: calc(60vw + 10%);
+    }
+    
+    .ouro > .img_patrocinador {
+        min-width: calc(60vw + 8%);
+    }
+    
+    .prata > .img_patrocinador {
+        min-width: calc(60vw + 6%);
+    }
+    
+    .bronze > .img_patrocinador {
+        min-width: calc(60vw + 4%);
+    }
+}
