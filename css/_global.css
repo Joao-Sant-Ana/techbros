@@ -12,8 +12,9 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+    width: 0px;
 }
+
 
 #menuAbrir {
     display: none;

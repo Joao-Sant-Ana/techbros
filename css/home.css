@@ -16,7 +16,10 @@ body {
     width: 100%;
     height: 100%;
     margin: auto;
+  
 }
+
+
 
 #carrosel_img {
     width: 100%;
@@ -379,6 +382,7 @@ figcaption {
     
     .texto {
         font-size: 15px;
+        width: 80svw;
     }
 
     img {
