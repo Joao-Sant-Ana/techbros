@@ -24,6 +24,7 @@
     display: none;
     position: fixed;
     background-color: var(--cor-fundo-secundaria);
+    z-index: 10;
 }
 
 .header_linha-1 {
