@@ -1,0 +1,118 @@
+@import url(_global.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 130px;
+}
+
+/* Menu de navegação. */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100svw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-fundo-secun);
+}
+
+nav > h3, nav > a {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--rosa-techbros);
+    transition: ease-in-out .5s;
+    cursor: pointer;
+    padding: 0 3%;
+}
+
+nav > h3:hover, nav > a:hover {
+    background-color: var(--rosa-techbros);
+    color: var(--rosa-secundario);
+    padding: 0 8%;
+    text-align: center;
+}
+/* Fim menu de navegação. */
+
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    min-width: 100svw;
+    padding-top: 60px;
+}
+
+.menu_topicos {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: var(--rosa-techbros);
+    gap: 20px;
+    width: 15%;
+    overflow-y: auto;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.menu_topicos > h1 {
+    cursor: pointer;
+}
+
+.menu_topicos > .topicos > li > a {
+    font-size: 20px;
+}
+
+.fechar_menu {
+    align-self: center;
+}
+
+#fechar_topicos_btn {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 45px;
+    top: 50%;
+    left: 13%;
+    cursor: pointer;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo);
+    gap: 260px;
+    width: 55%;
+    padding-top: 110px;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+#videos, #regras {
+    width: 100%;
+}
+
+.texto {
+    width: 88%;
+}
+
+.video {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #fechar_topicos_btn {
+        left: 12%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #fechar_topicos_btn {
+        display: none;
+    }
+
+    .menu_topicos {
+        display: none;
+    }
+}

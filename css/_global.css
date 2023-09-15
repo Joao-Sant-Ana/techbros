@@ -12,9 +12,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
 }
-
 
 #menuAbrir {
     display: none;
@@ -29,7 +28,8 @@
 
 .header_linha-1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 10vw;
     align-items: center;
 }
 
@@ -123,7 +123,6 @@ a:link, a:visited {
 body {
     background-color: var(--cor-fundo-primaria);
     color: white;
-
 }
 
 img {
@@ -201,7 +200,7 @@ footer {
 }
 
 .resumo_time.texto {
-    font-size: clamp(.8em, 1.2vw, 18px);
+    font-size: 15px;
     text-align: justify;
 }
 
@@ -236,6 +235,37 @@ footer {
     }
     .contatos {
         font-size: clamp(.9em, .8vw, 20px);
+    }
+}
+
+@media screen  and (max-width: 1000px){
+    .header_linha-1 {
+        justify-content: space-around;
+    }
+    
+    #menuAbrir {
+        display: block;
+    }
+
+    .info_nav {
+        display: none;
+    }
+    
+    .info_nav_menu {
+        display: none;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+        width: 100svw;
+        height: 100svh;
+        flex-direction: column;
+    }
+
+    #scrollpath, #progressbar {
+        display: none;
+    }
+    footer {
+        width: 100%;
     }
 }
 
@@ -289,6 +319,7 @@ footer {
         flex-direction: column;
     }
 }
+
 
 @media only screen and (max-width: 480px) {
     .resumo_time > p {

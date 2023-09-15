@@ -16,10 +16,7 @@ body {
     width: 100%;
     height: 100%;
     margin: auto;
-  
 }
-
-
 
 #carrosel_img {
     width: 100%;
@@ -51,7 +48,7 @@ main {
     align-items: center;
     flex-direction: column;
     max-width: fit-content;
-    min-width: 100%;
+    min-width: 100svw;
     gap: 70px;
     padding-top: 200px;
 }
@@ -103,6 +100,7 @@ h1 > span {
 .geral {
     display: flex;
     flex-direction: row;
+    align-items: center;
     min-width: 100%;
     max-width: fit-content;
 }
@@ -110,10 +108,11 @@ h1 > span {
 .area_principal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 0 10vw;
     max-width: fit-content;
-    min-width: 75%;
+    min-width: 60%;
     gap: 40px;
     flex-wrap: nowrap;
 }
@@ -121,20 +120,19 @@ h1 > span {
 .patrocinadores {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     align-self: flex-start;
     flex-wrap: nowrap;
     flex-direction: column;
+    margin: 0 10vw 0 0;
     max-width: fit-content;
-    min-width: 15%;
-    border-radius: 10px;
+    min-width: 25%;
     z-index: 1;
 }
 
 .patrocinadores > li > h1 {
     font-size: clamp(1em, 1vw + 8px, 2em);
-    margin: auto;
 }
 
 .patrocinadores_img {
@@ -155,9 +153,29 @@ h1 > span {
 }
 
 .patrocinador:hover {
+    animation: teste 2s;
+    animation-fill-mode:  forwards;
+}
+
+@keyframes teste {
+    0%{
+        transform: sclae(1);
+    }
+    50%{
+        filter: grayscale(0%);
+        transform: scale(1.1);
+    }
+    100%{
+        filter: grayscale(0%);
+        transform: scale(1);
+    }
+}
+
+/*
+.patrocinador:hover {
     filter: grayscale(0%);
     transform: scale(1.1);
-}
+}*/
 
 .subtitulo {
     font-size: clamp(1.2em, 2vw + 20px, 25px);
@@ -201,10 +219,34 @@ figcaption {
     max-width: fit-content;
 }
 
+.icon:hover {
+    animation: pulo 1s;
+}
 
+@keyframes pulo {
+    0% {
+        transform: translateX(0) rotate(0deg)
+    }
+
+    25% {
+        transform: translateY(5px) rotate(15deg)
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(-15deg)
+    }
+
+    75% {
+        transform: translateY(1px) rotate(10deg)
+    }
+
+    to {
+        transform: translateY(0) rotate(0deg)
+    }
+}
 
 /* Responsividade */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
     .patrocinadores {
         margin-right: 20px;
     }
@@ -219,55 +261,19 @@ figcaption {
     }
 }
 
-@media only screen and (max-width: 1024px) {    
-    .banner {
-        width: 100%;
-        height: 30%;
-    }
-
-    .scroll {
-        font-size: clamp(.8em, .4vw + .5em, 2em);
-    }
-
-    .msg_bemvindo > h1 {    
-        font-size: clamp(12px, 4.3vw + 22px, 5em);
-    }
-    
-    .patrocinadores {
-        font-size: clamp(1em .8vw, 2.5em);
-        margin-right: 5px;
-    }
-
-    .patrocinador {
-        width: 20svw;
-        height: 8svh;
-    }
-
-    .subtitulo {
-        font-size: clamp(1em, 1.1vw + 15px, 40px);
-    }
-    
-    .texto {
-        font-size: 15px;
-    }
-
-    .img {
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1080px) {
     .geral {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
+        min-width: calc(100% - 50px);
     }
 
     .patrocinadores {
         padding-top: 90px;
-        width: 100svw;
-        margin: auto;
+        width: 100%;
+        padding: 0 1    0%;
         align-items: center;
     }
 
@@ -284,8 +290,82 @@ figcaption {
     }
 
     .patrocinador {
+        width: 150px;
+        height: 50px;
+    }
+
+    .area_principal {
+        width: 90%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner {
+        width: 100%;
+        height: 30%;
+    }
+
+    .scroll {
+        font-size: clamp(.8em, .4vw + .5em, 2em);
+    }
+
+    .msg_bemvindo > h1 {    
+        font-size: clamp(12px, 4.3vw + 22px, 5em);
+    }
+
+    .subtitulo {
+        font-size: clamp(1em, 1.1vw + 15px, 40px);
+    }
+    
+    .texto {
+        font-size: 15px;
+    }
+
+    .img {
         width: 180px;
-        height: 70px;
+        height: 180px;
+    }
+}
+
+@media screen  and (max-width: 1000px){
+    .banner {
+        height: 40%;
+        padding-top: 100px;
+    }
+
+    .scroll {
+        font-size: clamp(.5em, .4vw + .2em, 1   em);
+    }
+
+    .patrocinador {
+        width: 100px;
+        height: 50px;
+    }
+
+    .msg_bemvindo > h1 {    
+        font-size: clamp(0.62em, 3.2vw + 1em, 4em);
+    }
+
+    .subtitulo {
+        font-size: clamp(.6em, 2vw + 20px, 40px);
+    }
+    
+    .texto {
+        font-size: 15px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    figcaption {
+        font-size: .7em;
+    }
+
+    .coluna_img {
+        flex-direction: column;
     }
 }
 
@@ -357,7 +437,8 @@ figcaption {
 
 }
 
-@media only screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
     .banner {
         height: 40%;
         padding-top: 100px;
