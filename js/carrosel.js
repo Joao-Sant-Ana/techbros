@@ -44,3 +44,5 @@ setInterval(() => {
         $carroselImg.src = `image/image${count}.png`
     }
 }, time);
+
+
