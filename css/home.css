@@ -24,7 +24,7 @@ body {
 
 .buttons {
     position: absolute;
-    top: calc(50% - 18svh);
+    top: calc(50% - 10svh);
     cursor: pointer;
 }
 
@@ -34,11 +34,11 @@ body {
 }
 
 #left {
-    right: calc(100% - 22svw);
+    right: calc(100% - 12svw);
 }
 
 #right {
-    left: calc(100% - 22svw);
+    left: calc(100% - 12svw);
 }
 
 main {
@@ -59,8 +59,8 @@ main {
     align-items: center;
     margin: auto;
     flex-direction: column;
-    width: 60svw;
-    height: 50svh;
+    width: 80svw;
+    height: 60svh;
 }
 
 .banner {

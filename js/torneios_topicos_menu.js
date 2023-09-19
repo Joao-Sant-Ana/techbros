@@ -1,12 +1,13 @@
 var $fecharMenu = document.getElementById('fechar_topicos_btn')
+var $menuTopico = document.getElementById('menu_topicos')
+var altura = document.body.scrollHeight
+
+$menuTopico.style.height = altura + "px"
 
 
 $fecharMenu.addEventListener('click', fecharMenu)
 
 function fecharMenu () {
-
-
-    var $menuTopico = document.getElementById('menu_topicos')
 
     if ($menuTopico.style.display != "none" ) {
         $fecharMenu.innerHTML = ">"

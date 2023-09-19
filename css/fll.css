@@ -43,7 +43,7 @@ main {
     padding-top: 60px;
 }
 
-.menu_topicos {
+#menu_topicos {
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -99,6 +99,10 @@ main {
 
 .video {
     width: 100%;
+}
+
+footer {
+    margin: 0 !important;
 }
 
 @media only screen and (max-width: 768px) {
