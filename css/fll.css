@@ -82,7 +82,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: var(--cor-fundo);
-    gap: 260px;
+    gap: 70px;
     width: 55%;
     padding-top: 110px;
     padding-left: 30px;
@@ -90,7 +90,10 @@ main {
 }
 
 #videos, #regras {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    gap: 50px;
 }
 
 .texto {
