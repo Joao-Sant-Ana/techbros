@@ -6,7 +6,6 @@ var $right = document.getElementById('right')
 var count = 1
 var time = 4000
 
-
 $left.addEventListener('click', recuar)
 $right.addEventListener('click', avancar)
 
@@ -31,8 +30,7 @@ function avancar () {
     }
 }
 
-
-
+/*
 setInterval(() => {
 
 
@@ -43,6 +41,6 @@ setInterval(() => {
         count++
         $carroselImg.src = `image/image${count}.png`
     }
-}, time);
+}, time);*/
 
 

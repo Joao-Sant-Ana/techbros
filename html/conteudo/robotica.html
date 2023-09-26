@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/./css/fll.css">
+    <link rel="stylesheet" href="/./css/conteudo.css">
     <title>Document</title>
 </head>
 <body>
@@ -26,12 +26,23 @@
             <p id="menuAbrir">Menu</p>
         </ul>
         <nav>
-            <h3>Robótica</h3>
-            <h3>FLL</h3>
-            <h3>FTC</h3>
-            <h3>FRC</h3>
-            <h3>F1</h3>
-            <h3>Juiz e Técnico</h3>
+            <a href=""><h3>Robótica</h3></a>
+            <a href=""><h3>FLL</h3></a>
+            <a href=""><h3>FTC</h3></a>
+            <a href=""><h3>FRC</h3></a>
+            <a href=""><h3>F1</h3></a>
+            <a href=""><h3>Juiz e Técnico</h3></a>
+            <div class="dropdown">
+                <img src="/./image/svg/seta-para-baixo.svg" alt="">
+                <div class="dropdown-content">
+                    <a class="link1" href="robotica.html">Robótica</a>
+                    <a class="link2">FLL</a>
+                    <a class="link3">FTC</a>
+                    <a class="link4">FRC</a>
+                    <a class="link5">F1</a>
+                    <a class="link6">Juiz e técnico</a>
+                </div>
+            </div>
        </nav>
     </header>
 
@@ -112,5 +123,6 @@
     <script src="/./js/scrollanimation.js"></script>
     <script src="/./js/menuAnimation.js"></script>
     <script src="/./js/torneios_topicos_menu.js"></script>
+    <script src="/./js/dropdown.js"></script>
 </body>
 </html>

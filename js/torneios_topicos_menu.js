@@ -1,9 +1,5 @@
 var $fecharMenu = document.getElementById('fechar_topicos_btn')
 var $menuTopico = document.getElementById('menu_topicos')
-var altura = document.body.scrollHeight
-
-$menuTopico.style.height = altura + "px"
-
 
 $fecharMenu.addEventListener('click', fecharMenu)
 
@@ -19,7 +15,7 @@ function fecharMenu () {
         if (window.screen.width <= "768px") {
             $fecharMenu.style.left = "12%"
         } else {
-            $fecharMenu.style.left = "13.5%"
+            $fecharMenu.style.left = "13%"
 
         }
     }
