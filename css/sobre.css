@@ -28,17 +28,19 @@ main {
     font-size: var(--fonte-padrao);
 }
 
-.img_row {
+.img_gallery {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 70%;
     gap: 40px;
 }
 
-.img_row > picture > img {
-    width: 300px;
+.img_gallery > picture > img {
+    width: 500px;
+    height: 300px;
 }
 
 @media only screen and (max-width: 768px) {

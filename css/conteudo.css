@@ -1,4 +1,11 @@
 @import url(_global.css);
+:root {
+    --rosa-techbros: #FF009D;
+    --rosa-secundario: #fcbdc7;
+    --cor-fundo-primaria: #0a0a0a;
+    --cor-fundo-secundaria: #000000e1;
+    --fonte-padrao: clamp(15px, 1vw + 8px, 20px);
+}
 
 html {
     scroll-behavior: smooth;
@@ -15,13 +22,13 @@ nav {
     width: 100svw;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--cor-fundo-secun);
+    background-color: var(--cor-fundo-secundaria);
 }
 
-nav > h3, nav > a {
+nav > h3 > a, nav > a {
     font-size: 20px;
     font-weight: 700;
-    color: var(--rosa-techbros);
+    color: #FF009D !important;
     transition: ease-in-out .5s;
     cursor: pointer;
     padding: 0 3%;
@@ -29,7 +36,7 @@ nav > h3, nav > a {
 
 nav > h3:hover, nav > a:hover {
     background-color: var(--rosa-techbros);
-    color: var(--rosa-secundario);
+    color: var(--rosa-secundario) !important;
     padding: 0 8%;
     text-align: center;
 }
