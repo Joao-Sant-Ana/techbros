@@ -124,9 +124,7 @@ footer {
     #fechar_topicos_btn {
         left: 12%;
     }
-}
 
-@media only screen and (max-width: 480px) {
     nav > a{
         display: none;
     }
@@ -139,6 +137,14 @@ footer {
         display: block;
     }
 
+    .video {
+        width: 60svw;
+        height: 30svh;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
     #fechar_topicos_btn {
         display: none;
     }
