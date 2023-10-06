@@ -13,10 +13,9 @@ function fecharMenu () {
         $fecharMenu.innerHTML = "<"
         $menuTopico.style.display = "block"
         if (window.screen.width <= "768px") {
-            $fecharMenu.style.left = "12%"
+            $fecharMenu.style.left = "22%"
         } else {
-            $fecharMenu.style.left = "13%"
-
+            $fecharMenu.style.left = "23%"
         }
     }
 }

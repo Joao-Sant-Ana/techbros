@@ -15,12 +15,34 @@ html {
     scroll-margin-top: 130px;
 }
 
+body {
+    background-color: black;
+}
+
+header {
+    padding: 0 11vw;
+    width: 100svw;
+}
+
+.header_linha-1{
+    justify-content: space-between;
+    margin: 0;
+    max-width: fit-content;
+    min-width: 76svw;
+}
+
+.info_nav {
+    padding: 0;
+}
+
 /* Menu de navegação. */
 nav {
     display: flex;
     align-items: center;
-    width: 100svw;
-    justify-content: space-around;
+    max-width: fit-content;
+    min-width: 76svw;
+    padding-right: 100svw;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--cor-fundo-secundaria);
 }
@@ -31,7 +53,6 @@ nav > h3 > a, nav > a {
     color: #FF009D !important;
     transition: ease-in-out .5s;
     cursor: pointer;
-    padding: 0 3%;
 }
 
 nav > h3:hover, nav > a:hover {
@@ -49,9 +70,12 @@ nav > h3:hover, nav > a:hover {
 main {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     max-width: fit-content;
     min-width: 100svw;
     padding-top: 60px;
+    margin: 0 11svw;
+    background-color: var(--cor-fundo-primaria);
 }
 
 #menu_topicos {
@@ -70,8 +94,15 @@ main {
     cursor: pointer;
 }
 
-#menu_topicos > .topicos > li > a {
+.topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topicos > li > a {
     font-size: 20px;
+    font-weight: 700;
 }
 
 .fechar_menu {
@@ -85,7 +116,7 @@ main {
     color: white;
     font-size: 45px;
     top: 50%;
-    left: 13%;
+    left: 23%;
     cursor: pointer;
 }
 
@@ -94,16 +125,16 @@ main {
     flex-direction: column;
     background-color: var(--cor-fundo);
     gap: 70px;
-    width: 55%;
+    width: 85%;
     padding-top: 110px;
-    padding-left: 30px;
+    padding-left: 110px;
     text-align: justify;
 }
 
 #videos, #regras {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 79%;
     gap: 50px;
 }
 
@@ -112,8 +143,8 @@ main {
 }
 
 .video {
-    width: 60svw;
-    height: 60svh;
+    width: 55svw;
+    height: 50svh;
 }
 
 footer {
@@ -135,6 +166,10 @@ footer {
 
     .dropdown {
         display: block;
+    }
+
+    .dropdown-content:nth-child(1n) {
+        margin-top: 10px;
     }
 
     .video {

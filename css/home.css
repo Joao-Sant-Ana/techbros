@@ -171,12 +171,6 @@ h1 > span {
     }
 }
 
-/*
-.patrocinador:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
-}*/
-
 .subtitulo {
     font-size: clamp(1.2em, 2vw + 20px, 25px);
 }
@@ -224,7 +218,7 @@ figcaption {
 }
 
 .img {
-    width: 200px;
+    width: 300px;
     height: 300px;
 }
 

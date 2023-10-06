@@ -8,6 +8,6 @@ function scrollProgress () {
     var totalHeight = document.body.scrollHeight - window.innerHeight
 
     //Tamanho que a progressbar terá.
-    let progressHeight = (window.pageYOffset / totalHeight) *100
+    let progressHeight = (window.scrollY / totalHeight) *100
     progress.style.height = progressHeight + "%"
 }
