@@ -332,17 +332,12 @@ figcaption {
 }
 
 @media screen  and (max-width: 1000px){
-    #carrosel {
-        width: 65%;
-        height: 50%;
-    }
-
     #left {
-        right: calc(100% - 27vw);
+        right: calc(100% - 12.3svw);
     }
-
+    
     #right {
-        left: calc(100% - 27vw);
+        left: calc(100% - 12.3svw);
     }
     
     .banner {

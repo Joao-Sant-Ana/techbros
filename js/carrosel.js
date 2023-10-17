@@ -11,22 +11,21 @@ $right.addEventListener('click', avancar)
 
 function recuar () {
     if (count == 1) {
-        count = 3
-        $carroselImg.src = `image/image${count}.png`
-
+        count = 4
+        $carroselImg.src = `image/imageC${count}.jpg`
     } else {
         count--
-        $carroselImg.src = `image/image${count}.png`
+        $carroselImg.src = `image/imageC${count}.jpg`
     }
 }
 
 function avancar () {
-    if (count == 3) {
+    if (count == 4) {
         count = 1
-        $carroselImg.src = `image/image${count}.png`
+        $carroselImg.src = `image/imageC${count}.jpg`
     } else {
         count++
-        $carroselImg.src = `image/image${count}.png`
+        $carroselImg.src = `image/imageC${count}.jpg`
     }
 }
 

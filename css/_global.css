@@ -80,7 +80,7 @@ a:link, a:visited {
     top: 0;
     width: 10px;
     height: 100%;
-    z-index: 4;
+    z-index: 12;
     background-color: white;
 }
 
@@ -90,7 +90,7 @@ a:link, a:visited {
     top: 0;
     width: 10px;
     height: 0%;
-    z-index: 5;
+    z-index:13;
     background-color: #FF009D;
 }
 
@@ -190,7 +190,7 @@ header {
     color: var(--rosa-techbros);
 }
   
-  .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
 
 .sobre {
     display: flex;
@@ -281,13 +281,9 @@ footer {
         justify-content: space-around;
     }
     
-    #menuAbrir {
-        display: block;
-    }
 
-    .info_nav {
-        display: none;
-    }
+
+
     
     .info_nav_menu {
         display: none;
@@ -311,6 +307,14 @@ footer {
 @media only screen and (max-width: 768px) {
     #scrollpath, #progressbar {
         display: none;
+    }
+
+    .info_nav {
+        display: none;
+    }
+
+    #menuAbrir {
+        display: block;
     }
 
     .resumo_time.texto {
