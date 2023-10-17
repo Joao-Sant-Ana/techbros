@@ -95,6 +95,7 @@ main {
 }
 
 .topicos {
+    position: fixed;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -111,7 +112,7 @@ main {
 
 #fechar_topicos_btn {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     color: white;
     font-size: 45px;
@@ -162,6 +163,30 @@ footer {
 
     nav {
         justify-content: flex-end;
+    }
+
+    #menu_topicos, #fechar_topicos_btn {
+        display: none;
+    }
+
+    main {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .conteudo {
+        
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 80%;
+    }
+
+    #videos, #regras {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
     }
 
     .dropdown {
