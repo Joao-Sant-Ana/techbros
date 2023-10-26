@@ -19,6 +19,13 @@ body {
 }
 
 #carrosel_img {
+    margin-inline: auto;
+    width: 70%;
+}
+
+.carrosel_quebra {
+    display: flex;
+    margin-inline: auto;
     width: 100%;
     height: 100%;
 }
@@ -70,6 +77,10 @@ main {
     z-index: -2;
     width: 100svw;
     height: 50%;
+}
+
+#right, #left {
+    display: none !important;
 }
 
 .msg_bemvindo > h1 { 
@@ -222,8 +233,7 @@ figcaption {
 }
 
 .img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
 }
 
 @keyframes pulo {
@@ -260,7 +270,6 @@ figcaption {
 
     .img {
         width: 20vw;
-        height: 20svh;
     }
 }
 
@@ -327,7 +336,7 @@ figcaption {
 
     .img {
         width: 180px;
-        height: 180px;
+
     }
 }
 
@@ -368,7 +377,6 @@ figcaption {
 
     img {
         width: 150px;
-        height: 150px;
     }
 
     figcaption {
@@ -407,6 +415,10 @@ figcaption {
         height: 50px;
     }
     
+    #carrosel_img {
+        width: 100%;
+    }
+
 
     .area_principal {
         padding: 0;
@@ -485,7 +497,6 @@ figcaption {
 
     img {
         width: 150px;
-        height: 150px;
     }
 
     figcaption {

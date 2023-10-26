@@ -34,13 +34,50 @@ main {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     gap: 40px;
 }
 
+.img_gallery > picture {
+    display: flex;
+    width: 20%;
+}
+
 .img_gallery > picture > img {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+.membros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.membro {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+}
+
+.membro:nth-child(2n) {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.membro_img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.membro_desc {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 10px;
+    width: 50%;
 }
 
 @media only screen and (max-width: 768px) {

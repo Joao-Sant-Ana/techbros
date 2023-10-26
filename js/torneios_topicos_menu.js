@@ -7,7 +7,7 @@ function fecharMenu () {
 
     if ($menuTopico.style.display != "none" ) {
         $fecharMenu.innerHTML = ">"
-        $fecharMenu.style.left = "11%"
+        $fecharMenu.style.left = "1%"
         $menuTopico.style.display = "none"
     } else {
         $fecharMenu.innerHTML = "<"
